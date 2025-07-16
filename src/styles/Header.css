@@ -10,6 +10,9 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   font-family: 'Segoe UI', sans-serif;
   flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .dairy-logo {
@@ -17,12 +20,20 @@
   font-weight: bold;
   color: #4caf50;
   text-shadow: 1px 1px #fff;
+  display: flex;
+  align-items: center;
+}
+
+.dairy-logo::before {
+  content: '🐄';
+  margin-right: 8px;
 }
 
 .dairy-nav {
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  transition: all 0.3s ease;
 }
 
 .dairy-nav a {
@@ -53,7 +64,7 @@
   color: #2e7d32;
 }
 
-/* ✅ Mobile Responsive Styles */
+/* Mobile Responsive */
 @media screen and (max-width: 768px) {
   .dairy-header {
     flex-direction: column;
@@ -71,6 +82,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 0.8rem;
+    padding-left: 1rem;
   }
 
   .dairy-nav a {
