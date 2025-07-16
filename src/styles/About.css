@@ -1,37 +1,73 @@
 /* About Page */
 
 .about-container {
-    max-width: 900px;
-    margin: auto;
-    padding: 2rem;
-    font-family: 'Segoe UI', sans-serif;
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fff7;
+}
+
+.about-container h2 {
+  font-size: 2.2rem;
+  color: #4caf50;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.about-container section {
+  margin-bottom: 2rem;
+  background-color: #ffffff;
+  border-left: 5px solid #81c784;
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.about-container h3 {
+  color: #2e7d32;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.about-container p {
+  line-height: 1.7;
+  color: #444;
+  font-size: 1rem;
+}
+
+.about-container ul {
+  padding-left: 1.5rem;
+  list-style: square;
+  margin-top: 0.5rem;
+}
+
+.about-container li {
+  margin-bottom: 0.4rem;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* ✅ Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+  .about-container {
+    padding: 1.5rem 1rem;
   }
-  
-  h2 {
-    font-size: 2rem;
-    color: #4caf50;
-    margin-bottom: 1rem;
+
+  .about-container h2 {
+    font-size: 1.6rem;
   }
-  
-  section {
-    margin-bottom: 2rem;
+
+  .about-container h3 {
+    font-size: 1.2rem;
   }
-  
-  h3 {
-    color: #2e7d32;
-    margin-bottom: 0.5rem;
+
+  .about-container p,
+  .about-container li {
+    font-size: 0.95rem;
   }
-  
-  p {
-    line-height: 1.6;
-    color: #444;
+
+  .about-container section {
+    padding: 1rem;
   }
-  
-  ul {
-    padding-left: 1.5rem;
-  }
-  
-  li {
-    margin-bottom: 0.5rem;
-  }
-  
+}
