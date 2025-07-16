@@ -9,7 +9,7 @@ const Header = () => {
         🐄 NS cattle feed
       </div>
       <nav className="dairy-nav">
-        <Link to="/home">Home</Link>
+        <Link to="/">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>
       </nav>
