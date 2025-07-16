@@ -1,0 +1,48 @@
+/* Dairy-themed header */
+
+.dairy-header {
+  background: linear-gradient(to right, #e0f7fa, #ffffff); /* milk-blue gradient */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  border-bottom: 3px solid #a2d5ab; /* green cow feel */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.dairy-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4caf50;
+  text-shadow: 1px 1px #fff;
+}
+
+.dairy-nav a {
+  margin-left: 2rem;
+  color: #3b3b3b;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+}
+
+.dairy-nav a::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #4caf50;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.dairy-nav a:hover::after {
+  width: 100%;
+}
+
+.dairy-nav a:hover {
+  color: #2e7d32;
+}
